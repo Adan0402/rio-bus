@@ -1,1 +1,1 @@
-# rio-bus
+El sistema Rio Bus realizara el calculo de camiones, combustible y la planificacion de rutas asi como la administracion de movimientos que realizara la empresa en sus diferentes areas de servicio asi como la vicion y alcance de nuestro producto
