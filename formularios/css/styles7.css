@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.columna {
+    flex: 1;
+    padding: 0 10px;
+}
+
+header {
+    position: relative; /* Establece un contexto de posicionamiento */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Color de texto */
+    text-align: center;
+    padding: 20px;
+}
+
+.franja-rosa {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Posición desde la parte superior */
+    left: 0; /* Posición desde la izquierda */
+    width: 100%; /* Ancho completo del encabezado */
+    height: 80px; /* Altura deseada para la franja */
+    background-color: #ff0066; /* Rosa mexicano */
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el relleno en el ancho total */
+}
+
+.logo-empresa {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 4px; /* Espaciado desde la parte superior */
+    right: 2px; /* Espaciado desde la derecha */
+    width: 200px; /* Tamaño deseado para el logo */
+    height: auto; /* Mantener la proporción */
+}
+
+.titulo-esquina {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 3px; /* Espaciado desde la parte superior */
+    right: 1110px; /* Espaciado desde la derecha */
+    color: #fff; /* Color de texto blanco */
+    font-size: 30px; /* Tamaño del texto */
+    font-style: italic;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #ff0066; /* Rosa mexicano */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Estilos para los botones */
+/* Estilos para el botón de ir a la página de inicio */
+.boton-inicio {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitamos la subrayado por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.boton-inicio:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff0066; /* Rosa mexicano */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.boton-guardar {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Quitamos el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.boton-guardar:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para los encabezados */
+h1,
+h2 {
+    color: #ff0066; /* Rosa mexicano */
+}
+
+/* Estilos para el botón "Enviar" */
+.boton-enviar {
+    background-color: #ff0066; /* Rosa mexicano */
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Quitamos el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.boton-enviar:hover {
+    background-color: #e6005c; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el contenedor del botón "Enviar" */
+.boton-container {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para el cuadrito azul del botón */
+.boton-container .cuadrito-azul {
+    display: inline-block; /* Hace que el elemento sea en línea */
+    background-color: #007bff; /* Azul */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para el texto dentro del cuadrito azul */
+.boton-container .cuadrito-azul p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    color: white; /* Color de texto blanco */
+}

@@ -1,0 +1,74 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ff0066; /* Bordado en rosa */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff0066; /* Fondo rosa para las celdas del encabezado */
+    color: white;
+}
+
+/* Estilos generales */
+body {
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff0066; /* Fondo rosa para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #ff0066; /* Fondo rosa para el pie de página */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.boton-inicio {
+    background-color: #ff0066; /* Fondo rosa para el botón */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton-inicio:hover {
+    background-color: #cc0052; /* Cambio de color al pasar el cursor */
+}
+
+.boton-editar, .boton-eliminar {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.boton-editar {
+    background-color: #007bff; /* Azul */
+}
+
+.boton-eliminar {
+    background-color: #dc3545; /* Rojo */
+}

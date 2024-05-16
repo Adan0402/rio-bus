@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+    background-color: #E4007F; /* Color rosa mexicano para el fondo */
+}
+
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative; /* Establece posición relativa para el contenedor */
+}
+
+.titulo-menu  {
+    font-size: 70px;
+    color: white; /* Color rosa mexicano para el título */
+    position: absolute; /* Establece posición absoluta */
+    top: 50px; /* Coloca el título 20px desde la parte superior */
+    left: 50px; /* Coloca el título 20px desde el lado izquierdo */
+    transform: translate(-30%, -30%); /* Centra el título en relación al punto de origen */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* Mostrar columnas una encima de otra */
+}
+
+.columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px; /* Espacio entre las columnas */
+}
+
+.columna-blanca {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+
+.columna h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.columna ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-bottom: 10px;
+}
+
+.columna ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E4007F; /* Color rosa mexicano */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.columna ul li a:hover {
+    background-color: #C70066; /* Color rosa más oscuro al pasar el mouse */
+}
+
+.boton-index {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Color verde */
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.boton-index:hover {
+    background-color: #388E3C; /* Color verde más oscuro al pasar el mouse */
+}

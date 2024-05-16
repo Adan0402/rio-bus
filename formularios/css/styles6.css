@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor del formulario */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff0066; /* Contorno rosa mexicano */
+}
+
+/* Estilo para la franja rosa mexicano en la parte superior */
+.franja-superior {
+    background-color: #ff0066; /* Rosa mexicano */
+    padding: 10px 20px;
+    color: #fff; /* Texto blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0; /* Esquinas redondeadas solo arriba */
+}
+
+/* Estilo para el título */
+.titulo {
+    margin: 0;
+}
+
+/* Estilo para el logo de la empresa */
+.logo {
+    width: 100px; /* Tamaño deseado para el logo */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Estilo para la franja rosa en la parte inferior */
+.franja-inferior {
+    background-color: #ff0066; /* Rosa mexicano */
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Esquinas redondeadas solo abajo */
+}
+
+/* Estilo para el botón de volver al menú */
+.btn-menu {
+    background-color: #fff; /* Fondo blanco */
+    color: #ff0066; /* Texto rosa mexicano */
+    border: 2px solid #ff0066; /* Contorno rosa mexicano */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-menu:hover {
+    background-color: #ff0066; /* Fondo rosa mexicano */
+    color: #fff; /* Texto blanco */
+}

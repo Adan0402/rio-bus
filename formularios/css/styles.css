@@ -1,0 +1,100 @@
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    margin: 0; /* Quitamos los márgenes por defecto */
+    padding: 0; /* Quitamos los rellenos por defecto */
+}
+
+header {
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+    padding: 1% 0; /* Ajustamos el relleno en porcentaje */
+}
+
+#bienvenidos {
+    color: #ff0066; /* Color rosa */
+    font-size: 5vw; /* Tamaño relativo al ancho de la ventana */
+    font-style: italic; /* Texto en cursiva */
+}
+
+#A {
+    color: #ff0066; /* Color rosa */
+    font-size: 2vw; /* Tamaño relativo al ancho de la ventana */
+}
+
+footer {
+    background-color: #ff0066; /* Rosa mexicano */
+    text-align: center;
+    padding: 2% 0; /* Ajustamos el relleno en porcentaje */
+    position: relative;
+}
+
+#eslogan p {
+    color: #ff0066; /* Color rosa mexicano */
+    font-size: 2vw; /* Tamaño relativo al ancho de la ventana */
+    font-style: italic; /* Texto en cursiva */
+}
+
+.imagen-lateral {
+    width: 15%; /* Tamaño relativo al ancho de la ventana */
+    height: auto; /* Mantenemos la proporción de aspecto */
+    margin: 0 5%; /* Espaciado en porcentaje */
+}
+
+.logo {
+    width: 30%; /* Tamaño relativo al ancho de la ventana */
+    height: auto; /* Mantenemos la proporción de aspecto */
+    margin-bottom: 2%; /* Espaciado en porcentaje */
+    display: inline-block; /* Permitir que las imágenes floten alrededor */
+}
+
+#botones {
+    position: absolute;
+    bottom: 40%; /* Ajustamos la posición en porcentaje */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Utilizamos flexbox para alinear los botones */
+}
+
+button.azul {
+    background-color: #007bff; /* Color azul */
+    color: #ffffff; /* Color blanco */
+    border: none;
+    padding: 5% 10%; /* Ajustamos el relleno en porcentaje */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; /* Añadimos un margen entre los botones */
+}
+
+
+/* Estilos para la ventana emergente */
+.ventana {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 2%;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.formulario button {
+    margin-top: 2%;
+}

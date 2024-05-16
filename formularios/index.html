@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Vinculamos el archivo CSS -->
+</head>
+<body>
+    <header>
+        <!-- La palabra "Bienvenidos" en rosa y cursiva -->
+        <h1 id="bienvenidos">Bienvenidos</h1>
+        <h1 id="A">A</h1>
+        <!-- Imagen a la izquierda del logo -->
+        <img src="img/imagen1.jpg" alt="img/imagen1.jpg" class="imagen-lateral">
+        <!-- El logo de la empresa -->
+        <img src="img/logofinal.jpg" alt="Logo de la empresa" class="logo">
+        <!-- Imagen a la derecha del logo -->
+        <img src="img/imagen2.jpg" alt="img/imagen2.jpg" class="imagen-lateral">
+        <div id="eslogan">
+            <p>Somos su mejor opción de viaje</p>
+        </div>
+    </header>
+    
+    <footer>
+        <!-- Eslogan debajo del logo -->
+        <div id="eslogan">
+            <p>Somos su mejor opción de viaje</p>
+        </div>
+        <!-- Botones de inicio de sesión y salir centrados -->
+        <div id="botones">
+            <button class="azul" onclick="abrirVentana()">Iniciar Sesión</button> 
+            <button class="azul">Salir</button>
+        </div>
+    </footer>
+
+    <!-- Ventana emergente -->
+    <div id="ventanaEmergente" class="ventana">
+        <form class="formulario" onsubmit="return validarCredenciales()">
+            <h2>Iniciar Sesión</h2>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+            <button type="submit" class="azul">Iniciar Sesión</button>
+            <button type="button" class="azul" onclick="cerrarVentana()">Cancelar</button>
+            <p id="mensaje-error" style="color:red; display:none;">Usuario o contraseña incorrectos</p>
+        </form>
+    </div>
+
+    <script>
+        function abrirVentana() {
+            document.getElementById('ventanaEmergente').style.display = 'block';
+        }
+
+        function cerrarVentana() {
+            document.getElementById('ventanaEmergente').style.display = 'none';
+        }
+
+        function validarCredenciales() {
+            const usuario = document.getElementById('usuario').value;
+            const contrasena = document.getElementById('contrasena').value;
+
+            const usuarioCorrecto = 'gerente';
+            const contrasenaCorrecta = '12345678';
+
+            if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
+                window.location.href = 'menu.html';
+                return false; // Evitar que se envíe el formulario
+            } else {
+                document.getElementById('mensaje-error').style.display = 'block';
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

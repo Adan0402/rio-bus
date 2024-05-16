@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff0066;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.franja-rosa {
+    background-color: #ff0066;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-empresa {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.titulo-esquina {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.boton-enviar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #45a049;
+}
+
+.boton-inicio-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-inicio {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton-inicio:hover {
+    background-color: #45a049;
+}
+
+#map {
+    margin-top: 20px;
+}
